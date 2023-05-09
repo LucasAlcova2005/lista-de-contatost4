@@ -16,5 +16,17 @@ namespace Lista_de_contatost4
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            //Criar contato
+            contato objetoContato = new contato();
+            LstContatos.TextItems(objetoContato.ToString());
+        }
     }
 }

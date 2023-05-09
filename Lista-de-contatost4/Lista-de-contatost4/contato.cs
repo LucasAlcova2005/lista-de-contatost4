@@ -47,7 +47,7 @@ namespace Lista_de_contatost4
         {
             PrimeiroNome = "José";
             Sobrenome = "Da Silva";
-            Telefone = "11-99782-8370"
+            Telefone = "11-99782-8370";
         }
         //sobrecarga do metodo construtor da classe
         public contato(string primeiroNome, string sobrenome, string telefone)
@@ -59,6 +59,15 @@ namespace Lista_de_contatost4
         public override string ToString()
         {
             string saida = String.Empty;
+            saida += string.Format("{0}, {1}", PrimeiroNome, Sobrenome);
+            saida += string.Format("{0}-{1}-{2}", 
+                Telefone.Substring(0, 1), 
+                Telefone.Substring(2, 4), 
+                Telefone.Substring(7, 3));
+
+            return saida;
+
+
         }
 
     }

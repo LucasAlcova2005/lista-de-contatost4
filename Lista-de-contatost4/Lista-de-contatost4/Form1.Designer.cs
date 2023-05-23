@@ -35,6 +35,8 @@
             this.TxtSobrenome = new System.Windows.Forms.TextBox();
             this.TxtTelefone = new System.Windows.Forms.TextBox();
             this.LstContatos = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -91,14 +93,34 @@
             this.LstContatos.FormattingEnabled = true;
             this.LstContatos.Location = new System.Drawing.Point(331, 60);
             this.LstContatos.Name = "LstContatos";
-            this.LstContatos.Size = new System.Drawing.Size(125, 108);
+            this.LstContatos.Size = new System.Drawing.Size(153, 147);
             this.LstContatos.TabIndex = 6;
+            this.LstContatos.SelectedIndexChanged += new System.EventHandler(this.LstContatos_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(72, 186);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Telefone";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(181, 186);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 8;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.LstContatos);
             this.Controls.Add(this.TxtTelefone);
             this.Controls.Add(this.TxtSobrenome);
@@ -122,6 +144,8 @@
         private System.Windows.Forms.TextBox TxtTelefone;
         private System.Windows.Forms.ListBox LstContatos;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

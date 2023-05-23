@@ -28,5 +28,20 @@ namespace Lista_de_contatost4
             contato objetoContato = new contato();
             LstContatos.TextItems(objetoContato.ToString());
         }
+
+        private void LstContatos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
